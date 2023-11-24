@@ -6,6 +6,14 @@
     "title": "About",
     "type": "page"
   },
+  "documentation": {
+    "title": "Documentation",
+    "type": "page"
+  },
+  "Showcase": {
+    "title": "Showcase",
+    "type": "page"
+  },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
@@ -13,3 +21,4 @@
     "newWindow": true
   }
 }
+s
