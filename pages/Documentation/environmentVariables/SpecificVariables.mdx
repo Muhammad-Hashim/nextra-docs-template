@@ -1,29 +1,29 @@
-## File Specific Variables
+###  File Specific Variables
 
 These are variables that control the behavior of a specific file, these usually don't affect the library itself.
 Most of the time these will never be used, but they are here for completeness.
 
-### accel/ane/2_compile/hwx_parse.py
+#### accel/ane/2_compile/hwx_parse.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
 PRINTALL | [1] | print all ANE registers
 
-### extra/onnx.py
+#### # extra/onnx.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
 ONNXLIMIT | [#] | set a limit for ONNX
 DEBUGONNX | [1] | enable ONNX debugging
 
-### extra/thneed.py
+####  extra/thneed.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
 DEBUGCL      | [1-4] | enable Debugging for OpenCL
 PRINT_KERNEL | [1]   | Print OpenCL Kernels
 
-### extra/kernel_search.py
+####  extra/kernel_search.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
@@ -39,25 +39,25 @@ GEMM          | [1]   | enable general matrix multiply operations
 BROKEN        | [1]   | enable a kind of operation
 BROKEN3       | [1]   | enable a kind of operation
 
-### examples/vit.py
+####  examples/vit.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
 LARGE | [1] | enable larger dimension model
 
-### examples/llama.py
+####  examples/llama.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
 WEIGHTS | [1] | enable loading weights
 
-### examples/mlperf
+####  examples/mlperf
 
 Variable | Possible Value(s) | Description
 ---|---|---
 MODEL | [resnet,retinanet,unet3d,rnnt,bert,maskrcnn] | what models to use
 
-### examples/benchmark_train_efficientnet.py
+####  examples/benchmark_train_efficientnet.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
@@ -66,7 +66,7 @@ BACKWARD | [1]  | enable backward pass
 TRAINING | [1]  | set Tensor.training
 CLCACHE  | [1]  | enable cache for OpenCL
 
-### examples/hlb_cifar10.py
+####  examples/hlb_cifar10.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
@@ -75,13 +75,13 @@ DISABLE_BACKWARD | [1] | don't do backward pass
 DIST             | [1] | enable distributed training
 STEPS            | [#] | number of steps
 
-### examples/benchmark_train_efficientnet.py & examples/hlb_cifar10.py
+####  examples/benchmark_train_efficientnet.py & examples/hlb_cifar10.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
 ADAM | [1] | use the Adam optimizer
 
-### examples/train_efficientnet.py
+####  examples/train_efficientnet.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
@@ -89,56 +89,56 @@ STEPS    | [# % 1024] | number of steps
 TINY     | [1]        | use a tiny convolution network
 IMAGENET | [1]        | use imagenet for training
 
-### examples/train_efficientnet.py & examples/train_resnet.py
+####  examples/train_efficientnet.py & examples/train_resnet.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
 TRANSFER | [1] | enable to use pretrained data
 
-### examples & test/external/external_test_opt.py
+####  examples & test/external/external_test_opt.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
 NUM | [18, 2] | what ResNet[18] / EfficientNet[2] to train
 
-### test/test_ops.py
+####  test/test_ops.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
 PRINT_TENSORS | [1] | print tensors
 FORWARD_ONLY  | [1] | use forward operations only
 
-### test/test_speed_v_torch.py
+####  test/test_speed_v_torch.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
 TORCHCUDA | [1] | enable the torch cuda backend
 
-### test/external/external_test_gpu_ast.py
+####  test/external/external_test_gpu_ast.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
 KCACHE | [1] | enable kernel cache
 
-### test/external/external_test_opt.py
+####  test/external/external_test_opt.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
 ENET_NUM | [-2,-1] | what EfficientNet to use
 
-### test/test_dtype.py & test/extra/test_utils.py & extra/training.py
+####  test/test_dtype.py & test/extra/test_utils.py & extra/training.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
 CI | [1] | disables some tests for CI
 
-### examples & extra & test
+####  examples & extra & test
 
 Variable | Possible Value(s) | Description
 ---|---|---
 BS | [8, 16, 32, 64, 128] | batch size to use
 
-### extra/datasets/imagenet_download.py
+####  extra/datasets/imagenet_download.py
 
 Variable | Possible Value(s) | Description
 ---|---|---
