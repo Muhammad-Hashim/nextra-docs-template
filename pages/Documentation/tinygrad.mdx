@@ -10,30 +10,26 @@ tinygrad: For something between [PyTorch](https://github.com/pytorch/pytorch) an
 
 </h3>
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/tinygrad/tinygrad)](https://github.com/tinygrad/tinygrad/stargazers)
+[![GitHub Repo stars](https://img.shields.io/github/stars/tinygrad/tinygrad)](https://github.com/tinygrad/tinygrad/stargazers) 
+
 [![Unit Tests](https://github.com/tinygrad/tinygrad/actions/workflows/test.yml/badge.svg)](https://github.com/tinygrad/tinygrad/actions/workflows/test.yml)
+
 [![Discord](https://img.shields.io/discord/1068976834382925865)](https://discord.gg/ZjZadyC7PK)
 
 </div>
 
 ---
-
-This may not be the best deep learning framework, but it is a deep learning framework.
-
-Due to its extreme simplicity, it aims to be the easiest framework to add new accelerators to, with support for both inference and training. If XLA is CISC, tinygrad is RISC.
-
+This may not be the best deep learning framework, but it is a deep learning framework.\
+Due to its extreme simplicity, it aims to be the easiest framework to add new accelerators to, with support for both inference and training. If XLA is CISC, tinygrad is RISC.\
 tinygrad is still alpha software, but we [raised some money](https://geohot.github.io/blog/jekyll/update/2023/05/24/the-tiny-corp-raised-5M.html) to make it good. Someday, we will tape out chips.
 
-## Features
-
-### LLaMA and Stable Diffusion
+### Features
+##### - LLaMA and Stable Diffusion
 
 tinygrad can run [LLaMA](/docs/showcase.md#llama) and [Stable Diffusion](/docs/showcase.md#stable-diffusion)!
 
-### Laziness
-
+##### - Laziness
 Try a matmul. See how, despite the style, it is fused into one kernel with the power of laziness.
-
 ```sh
 DEBUG=3 python3 -c "from tinygrad import Tensor;
 N = 1024; a, b = Tensor.rand(N, N), Tensor.rand(N, N);
@@ -43,7 +39,7 @@ print((c.numpy() - (a.numpy() @ b.numpy())).mean())"
 
 And we can change `DEBUG` to `4` to see the generated code.
 
-### Neural networks
+##### - Neural networks
 
 As it turns out, 90% of what you need for neural networks are a decent autograd/tensor library.
 Throw in an optimizer, a data loader, and some compute, and you have all you need.
@@ -72,8 +68,7 @@ for i in range(10):
 
 See [examples/beautiful_mnist.py](examples/beautiful_mnist.py) for the full version that gets 98% in ~5 seconds
 
-## Accelerators
-
+### Accelerators
 tinygrad already supports numerous accelerators, including:
 
 - [x] [CPU](tinygrad/runtime/ops_cpu.py)
@@ -90,11 +85,11 @@ tinygrad already supports numerous accelerators, including:
 And it is easy to add more! Your accelerator of choice only needs to support a total of 26 (optionally 27) low level ops.
 More information can be found in the [documentation for adding new accelerators](/docs/adding_new_accelerators.md).
 
-## Installation
+### Installation
 
 The current recommended way to install tinygrad is from source.
 
-### From source
+#### From source
 
 ```sh
 git clone https://github.com/tinygrad/tinygrad.git
@@ -103,11 +98,11 @@ python3 -m pip install -e .
 ```
 Don't forget the `.` at the end!
 
-## Documentation
+### Documentation
 
 Documentation along with a quick start guide can be found in the [docs/](/docs) directory.
 
-### Quick example comparing to PyTorch
+#### Quick example comparing to PyTorch
 
 ```py
 from tinygrad import Tensor
@@ -134,7 +129,7 @@ print(x.grad.numpy())  # dz/dx
 print(y.grad.numpy())  # dz/dy
 ```
 
-## Contributing
+### Contributing
 
 There has been a lot of interest in tinygrad lately. Here are some basic guidelines for contributing:
 
@@ -146,7 +141,7 @@ There has been a lot of interest in tinygrad lately. Here are some basic guideli
 
 Additional guidelines can be found in [CONTRIBUTING.md](/CONTRIBUTING.md).
 
-### Running tests
+#### Running tests
 
 For more examples on how to run the full test suite please refer to the [CI workflow](.github/workflows/test.yml).
 

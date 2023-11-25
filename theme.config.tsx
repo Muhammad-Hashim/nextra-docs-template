@@ -2,8 +2,11 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import Image from 'next/image'
 import log from './pages/logo.png'
+import styles from './components/counters.module.css'
+
+
 const config: DocsThemeConfig = {
-  logo: <span><Image src={log}  width={70}  height={70} alt="hashim" />  </span>,
+  logo: <span className={styles.logo}><Image src={log}  width={70}  height={70} alt="hashim" />  <h1>tinygrad  </h1> </span>,
   project: {
     link: 'https://github.com/tinygrad/tinygrad',
   },
@@ -14,6 +17,8 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Nextra Docs Template',
   },
+  
+   
 }
 
 export default config
