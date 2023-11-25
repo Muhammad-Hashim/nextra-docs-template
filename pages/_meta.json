@@ -1,7 +1,18 @@
-{
-  "index": "Introduction",
-  "quickStart": "Quick Start",
-  "environmentVariables": "Environment variables",
+{ "index": "Introduction",
+  
+
+
+  "Documentation": {
+    "title": "Documentation",
+    "type": "page"    
+  },
+   
+  "index": {
+    "title": "Home",
+    "type": "page"
+  },
+
+
   "about": {
     "title": "About",
     "type": "page"
@@ -12,4 +23,5 @@
     "href": "https://twitter.com/shuding_",
     "newWindow": true
   }
+
 }

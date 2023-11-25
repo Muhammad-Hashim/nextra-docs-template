@@ -8,7 +8,7 @@ const config: DocsThemeConfig = {
     link: 'https://github.com/tinygrad/tinygrad',
   },
   chat: {
-    link: 'https://discord.com',
+    link: 'https://discord.gg/ZjZadyC7PK',
   },
   docsRepositoryBase: 'https://github.com/tinygrad/tinygrad/tree/master/docs',
   footer: {
