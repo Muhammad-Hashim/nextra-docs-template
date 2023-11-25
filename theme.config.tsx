@@ -15,7 +15,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/tinygrad/tinygrad/tree/master/docs',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'we are the tiny corp We write and maintain tinygrad, the fastest growing neural network framework   work@tinygrad.org  ',
   },
   
    

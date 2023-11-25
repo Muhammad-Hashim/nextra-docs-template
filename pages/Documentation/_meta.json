@@ -1,4 +1,4 @@
-{  "index": "Welcome",
+{  "welcome": "Welcome",
    "tinygrad":"Introduction ",
    "quickStart": "Quick Guide ",
    "environmentVariables": "Environment variables",
