@@ -12,6 +12,10 @@
     "type": "page"
   },
 
+  "showcase": {
+    "title": "showcase",
+    "type": "page"
+  },
 
   "about": {
     "title": "About",

@@ -1,6 +1,7 @@
-{ "index": "Introduction",
-  "quickStart": "Quick Start",
-  "environmentVariables": "Environment variables"
-  
+{  "index": "Welcome",
+   "tinygrad":"Introduction ",
+   "quickStart": "Quick Guide ",
+   "environmentVariables": "Environment variables",
+   "abstractions":"Abstractions"
    
 }
