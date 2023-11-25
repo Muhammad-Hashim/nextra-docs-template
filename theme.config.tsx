@@ -22,6 +22,7 @@ const config: DocsThemeConfig = {
     </>
   ),
   
+  
 }
 
 export default config
